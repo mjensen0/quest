@@ -1,5 +1,18 @@
 # A quest in the clouds
 
+## Deployment Instructions
+
+1. Configure a workspace in Terraform cloud and assign AWS Variable Set
+2. Update main.tf with terraform cloud information
+3. Run terraform init to initialize terraform
+4. Update  dns.tf to reflect hostnames you want to use for the application
+5. If forking this project or you wish to use a different build remove the docker pull and docker run lines from ec2.tf
+6. Run terraform plan
+7. Run terraform init
+
+## Artifacts
+The docker image is stored in the github container registry as a package on this project.
+
 ### Q. What is this quest?
 
 It is a fun way to assess your cloud skills. It is also a good representative sample of the work we do at Rearc. Quest is a webapp made with node.js and golang.
